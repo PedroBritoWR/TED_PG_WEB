@@ -16,8 +16,11 @@
     --font-paragrafo: "Krona One", sans-serif;
 }
 
+
 body{
-    background-color: var(--cor-primaria);
+  background: linear-gradient(135deg, #00b894, #0984e3, #F1F1F1);
+  background-size: cover;
+  background-attachment: fixed;
     color: var(--cor-terciaria);
     width: 100vw;    
     height: 56.25rem;
@@ -34,7 +37,7 @@ body{
 
 
 #cabecalho{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
 }
 
@@ -85,6 +88,7 @@ body{
     height: 1rem;
 
 }
+
 
 .carousel{
   margin: 5.625rem auto;
