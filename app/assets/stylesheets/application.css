@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-primaria: #F1F1F1;
+    --cor-secundaria: #3a015c;
+    --cor-terciaria: #292824;
+    --font-titulo: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif; 
+    --font-segundo-titulo:"Manrope", sans-serif;
+    --font-paragrafo: "Krona One", sans-serif;
+}
+
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    width: 100vw;    
+    height: 56.25rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+
+#cabecalho{
+    /* position: fixed; */
+    width: 100%;
+}
+
+.img-fluid-nav{
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+}
+
+#section-title{
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+#product-title{
+  margin-bottom: 1.875rem;
+}
+
+#apresentacao-produto{
+  margin-bottom: 5rem;
+}
+
+#descricao-produto{
+  margin-bottom: 5rem;
+  width: 50%;
+  margin-left: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-title{
+    font-family: var(--font-titulo);
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--cor-terciaria);
+}
+
+.section-paragrafo{
+    font-family: var(--font-paragrafo);
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.img-fluid-icon{
+    width: 1rem;
+    height: 1rem;
+
+}
+
+.carousel{
+  margin: 5.625rem auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+.carousel-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.col-md-8{
+  border: 0.125rem solid black;
+  border-radius: 1.75rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-fluid{
+    width: 9.375rem;
+    height: 9.375rem;
+}
+
+
+.img-fluid-icon-footer{
+  width: 2rem;
+  height: 2rem;
+}
+
+
+.proposito{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.text-inspiracao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title-sobrenos{
+  font-size: 2rem;
+  font-family: Futura-ExtraBoldCond, sans-serif;
+  font-weight: 800;
+  color: var(--cor-terciaria);
+  text-align: center;
+}
+
+.paragrafo-sobrenos{
+  margin-left: 5rem;
+}
+
+.img-fluid{
+  width: 100%;
+}
+
+#text-sobrenos{
+  font-size: 2rem;
+  
+}
+
+.cards-inspiracao{
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.video-fluid{
+  width: 100%;
+}
+
+ .card {
+  display: flex;
+  height: 15.625rem;
+  width: 15.625rem;
+  background-color: #17141d;
+  border-radius: 0.625rem;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 1.25rem;
+  top: 0.938rem;
+}
+
+.bar {
+  position: absolute;
+  top: 6.25rem;
+  left: 1.25rem;
+  height: 0.313rem;
+  width: 9.375rem;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 7.5rem;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 9.375rem;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 0.125rem;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+#img-carousel{
+height: 100%;
+width: 100%;
+}
+
+
+@media (max-width: 687px ) {
+  .cards-inspiracao{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 687px ) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
