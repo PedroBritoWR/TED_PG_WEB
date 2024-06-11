@@ -1,0 +1,68 @@
+<div id="product-title" class="container">
+  <h1 id="section-title" class="section-title">Inovação Revelada: Conheça o Air Max 90!</h1>
+</div>
+
+<div class="container mt-5">
+  <div class="card">
+    <img id="img-carousel" class="img-fluid" src="assets/first side max.avif" alt="First side air max">
+  </div>
+  <div class="card">
+    <img id="img-carousel" class="img-fluid" src="assets/front max.avif" alt="Front side air max">
+  </div>
+  <div class="card">
+    <img id="img-carousel" class="img-fluid" src="assets/behind max.avif" alt="Back side air max">
+    <div class="bar">
+    </div>
+  </div>
+  <div class="card">
+    <img id="img-carousel" class="img-fluid" src="assets/other side max.avif" alt="other side air max">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="apresentacao-produto" class="d-flex p-5 pt-0  justify-content-center">
+  <div class="card" style="width: 18rem;">
+    <img src="https://imgnike-a.akamaihd.net/768x768/0163241EA10.jpg" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Air Max 97!</h5>
+      <p class="card-text">Conhecão o Air Max 97!</p>
+      <a href="#" class="btn btn-primary">Compre agora</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://imgnike-a.akamaihd.net/768x768/027364IDA2.jpg" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Air Max 90!</h5>
+      <p class="card-text">Conhecão o Air Max 90!</p>
+      <a href="#" class="btn btn-primary">Compre agora</a>
+    </div>
+  </div>
+</section>
+<section id="apresentacao-produto" class="d-flex p-3 justify-content-center">
+  <div class="card" style="width: 18rem;">
+    <img src="https://imgnike-a.akamaihd.net/768x768/027414IDA5.jpg" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Air Max TW!</h5>
+      <p class="card-text">Conhecão o Air Max TW!</p>
+      <a href="#" class="btn btn-primary">Compre agora</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://imgnike-a.akamaihd.net/768x768/02779715A4.jpg" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Air Max Plus OG!</h5>
+      <p class="card-text">Conhecão o Air Max Plus OG!</p>
+      <a href="#" class="btn btn-primary">Compre agora</a>
+    </div>
+  </div>
+</section>

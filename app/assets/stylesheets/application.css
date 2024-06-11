@@ -16,9 +16,8 @@
     --font-paragrafo: "Krona One", sans-serif;
 }
 
-
 body{
-  background: linear-gradient(135deg, #00b894, #0984e3, #F1F1F1);
+  background: linear-gradient(135deg, #F1F1F1, #0984e3);
   background-size: cover;
   background-attachment: fixed;
     color: var(--cor-terciaria);
@@ -35,10 +34,10 @@ body{
   justify-content: center;
 }
 
-
 #cabecalho{
-    position: fixed;
-    width: 100%;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
 .img-fluid-nav{
@@ -50,15 +49,10 @@ body{
 #section-title{
   text-align: center;
   font-size: 2rem;
-
 }
 
 #product-title{
   margin-bottom: 1.875rem;
-}
-
-#apresentacao-produto{
-  margin-bottom: 5rem;
 }
 
 #descricao-produto{
@@ -87,14 +81,6 @@ body{
     width: 1rem;
     height: 1rem;
 
-}
-
-
-.carousel{
-  margin: 5.625rem auto;
-  padding: 0 5%;
-  width: 80%;
-  position: relative;
 }
 
 .carousel-inner{
@@ -170,30 +156,32 @@ body{
 }
 
  .card {
-  display: flex;
   height: 15.625rem;
   width: 15.625rem;
   background-color: #17141d;
   border-radius: 0.625rem;
   box-shadow: -1rem 0 3rem #000;
   transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
 }
 
 .card:not(:first-child) {
     margin-left: -50px;
 }
 
-.card:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out;
+.card-horizontal {
+  display: flex;
+  flex-direction: row;
+  color: #F1F1F1;
+  width: 20rem;
 }
-
-.card:hover ~ .card {
-  position: relative;
-  left: 50px;
-  transition: 0.4s ease-out;
+.card-horizontal .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-horizontal img {
+  width: 150px;
+  height: auto;
 }
 
 .title {
