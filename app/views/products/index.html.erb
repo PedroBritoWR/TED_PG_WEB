@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
 </head>
 
-<body> 
+<body class="overflow-hidden"> 
     <header id="cabecalho">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -66,29 +66,40 @@
             </div>
         </nav>
     </header>
-
-
-
-
-<p style="color: green"><%= notice %></p>
-<div class="container d-flex justify-content-center align-items-center flex-column mb-5 gap-3">  
-  <h1 class="text-center">Produtos</h1>                           
-  <div id="products">
-    <% @products.each do |product| %>
-      <%= render product %>
-      <p>
-        <%= link_to "Show this product", product%>
-      </p>
-    <% end %>
-  </div>
-
-
-<%= link_to "Cadastrar novo produto", new_product_path, class: "btn btn-primary"%>
-
+     
+    <main class="container">
+        <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @products.each do |product| %>
+            <tr>
+            <td><%= product.id %></td>
+            <td><%= product.name %></td>
+            <td><%= number_to_currency(product.price) %></td>
+            <td>
+                <div class="d-flex gap-3">
+                  <%= link_to "Visualizar produto", product, class: "btn btn-success"%>
+                </div>
+            </td>
+            </tr>
+        <% end %>
+        </tbody>
+    </table>
+  </main>
+  <div class="container mb-5">          
+    <%= link_to "Cadastrar novo produto", new_product_path, class: "btn btn-primary"%>
+  </div>          
 </div>
 
 
-<footer id="rodape" class="text-center bg-body-tertiary">
+<footer id="rodape" class="text-center bg-body-tertiary mt-5">
         <div class="container pt-4">
             <section class="mb-4">
                 <a target="_blank" data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1"
